@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var firstValueLabel: UILabel!
     @IBOutlet weak var equalLabel: UILabel!
     @IBOutlet weak var titleImage: UIImageView!
+    @IBOutlet weak var themeImage: UIImageView!
     
     var dataManager = DataManager()
     var  firstCurrency = "AUD"
@@ -34,6 +35,8 @@ class ViewController: UIViewController {
         resultLabel.text = "1"
         darkSwitcher.addTarget(self, action: #selector(darkModeSwitcher(_:)), for: .touchUpInside)
         darkSwitcher.onTintColor = .black
+        themeImage.image = UIImage(systemName: "moon.fill")
+        themeImage.tintColor = .black
     }
     
 }
@@ -81,6 +84,8 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
         firstCurrencyPicker.setValue(UIColor.white, forKey: "textColor")
         titleImage.image = UIImage(named: "ExchangerDark")
         isToggleOn = false
+            themeImage.image = UIImage(systemName: "sun.min.fill")
+            themeImage.tintColor = .white
         } else {
             view.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
             firstCurrencyLabel.textColor = .black
@@ -91,6 +96,8 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource {
             firstCurrencyPicker.setValue(UIColor.black, forKey: "textColor")
             titleImage.image = UIImage(named: "Exchanger")
             isToggleOn = true
+            themeImage.image = UIImage(systemName: "moon.fill")
+            themeImage.tintColor = .black
         }
     }
 }
