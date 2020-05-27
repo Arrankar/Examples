@@ -23,7 +23,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="98t-Ja-4xm" userLabel="TitleView">
                                         <rect key="frame" x="0.0" y="0.0" width="394" height="259.5"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Exchanger" translatesAutoresizingMaskIntoConstraints="NO" id="kJa-jM-Xzj">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThemeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="kJa-jM-Xzj">
                                                 <rect key="frame" x="97" y="79.5" width="200" height="100"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="5pI-Qs-ina"/>
@@ -33,9 +33,18 @@
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnE-yw-kjp">
                                                 <rect key="frame" x="335" y="10" width="51" height="31"/>
                                             </switch>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YbW-Fv-7KV">
+                                                <rect key="frame" x="295" y="10" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Gtl-qG-Rtb"/>
+                                                    <constraint firstAttribute="width" constant="30" id="TZo-X4-6uh"/>
+                                                </constraints>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="YbW-Fv-7KV" firstAttribute="top" secondItem="98t-Ja-4xm" secondAttribute="top" constant="10" id="7f2-cw-ojR"/>
                                             <constraint firstItem="vnE-yw-kjp" firstAttribute="top" secondItem="98t-Ja-4xm" secondAttribute="top" constant="10" id="KIb-3w-pgA"/>
+                                            <constraint firstItem="vnE-yw-kjp" firstAttribute="leading" secondItem="YbW-Fv-7KV" secondAttribute="trailing" constant="10" id="Ong-90-iem"/>
                                             <constraint firstItem="kJa-jM-Xzj" firstAttribute="centerY" secondItem="98t-Ja-4xm" secondAttribute="centerY" id="hH6-BO-FIK"/>
                                             <constraint firstItem="kJa-jM-Xzj" firstAttribute="centerX" secondItem="98t-Ja-4xm" secondAttribute="centerX" id="nnv-PM-jVl"/>
                                             <constraint firstAttribute="trailing" secondItem="vnE-yw-kjp" secondAttribute="trailing" constant="10" id="pMK-5f-VQF"/>
@@ -159,16 +168,17 @@
                         <outlet property="pickerView" destination="3JP-nV-ozw" id="dKa-po-dau"/>
                         <outlet property="resultLabel" destination="rHF-6k-ekA" id="Lvn-r6-wNs"/>
                         <outlet property="secondCurrencyLabel" destination="8V0-hO-eF9" id="yG6-vo-NMZ"/>
+                        <outlet property="themeImage" destination="YbW-Fv-7KV" id="mym-nm-CjE"/>
                         <outlet property="titleImage" destination="kJa-jM-Xzj" id="bOg-eV-hJd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="113.79310344827587"/>
+            <point key="canvasLocation" x="136.23188405797103" y="113.16964285714285"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Exchanger" width="389" height="103.5"/>
+        <image name="ThemeLogo" width="389" height="103.5"/>
         <namedColor name="Background">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
