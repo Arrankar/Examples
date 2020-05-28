@@ -10,7 +10,7 @@
 ландшафтный режим.
 
 ![alt text](https://sun9-53.userapi.com/OKacta9TvKjFPFhNVsM1h2nWOP_nZIhCI4xTpw/1pKntT_611c.jpg)
-![alt text](https://sun1-92.userapi.com/Bn44WJNc_5oAgLNc-PiZR6r7E_itA2n9d0240A/PLIn8_sfC5c.jpg)
+![alt text](https://sun1-22.userapi.com/kssIWTfUiMRhbH_Lkzm8PtpIkmSV_ooS3O4S_w/bL9Q-oef9Js.jpg)
 
 ## Используемые инструменты
 
